@@ -1,0 +1,31 @@
+#include <iostream.h>
+template <class T>
+class example {
+  private:
+  T elems;
+
+  public:
+
+  example(T i)
+  {
+   elems=i;
+  }
+  void show()
+  {
+   cout<<" output="<<elems;
+  }
+};
+void main()
+{
+ example<int> e1(5);
+ cout<<"\nFor integer=";
+ e1.show();
+ cout<<"\nFor float=";
+ example<float> e2(2.5);
+ e2.show();
+
+ cout<<"\nFor char=";
+ example<char> e3('A');
+ e3.show();
+
+}
